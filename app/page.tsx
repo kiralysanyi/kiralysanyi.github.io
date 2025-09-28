@@ -1,13 +1,24 @@
 import Link from "next/link";
+import { Fade, Reveal, JackInTheBox } from "react-awesome-reveal";
 
 export default function Home() {
+
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-gray-900 via-blue-950 to-gray-900 text-white flex flex-col justify-center">
-      <div className="flex justify-center">
-        <h1 className="text-4xl font-bold text-center">
-          Ez az oldal jelenleg fejlesztés alatt áll.
-        </h1>
-      </div>
+    <div className="pageroot">
+      <main>
+        <section className="hero">
+          <Fade direction="up">
+            <h1>Címsor, hú de menő</h1>
+          </Fade>
+          <JackInTheBox delay={500}>
+            <h2>Alcím vagy mi a tosz</h2>
+          </JackInTheBox>
+        </section>
+        <section id="about"></section>
+        <section id="experience"></section>
+        <section id="contact"></section>
+      </main>
+      <footer></footer>
     </div>
   );
 }

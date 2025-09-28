@@ -1,1 +1,29 @@
 @import 'tailwindcss';
+
+html, body, #__next {
+    @apply min-h-screen;
+    @apply bg-gradient-to-b from-gray-950 via-blue-950 to-gray-950;
+}
+
+.hero {
+    @apply flex flex-col justify-center items-center;
+    @apply h-screen;
+}
+
+.hero h1 {
+    @apply text-5xl text-white;
+}
+
+.hero h2 {
+    @apply text-3xl text-white;
+}
+
+nav {
+    @apply fixed;
+    @apply top-0 left-0;
+    @apply w-screen h-20;
+    @apply backdrop-blur-2xl;
+    @apply z-10;
+    @apply flex flex-row items-center;
+    @apply px-4;
+}

@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 import "./global.css"
+import { useState } from "react";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "Király Sándor - Webfejlesztő",
@@ -15,9 +17,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="hu">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} root`}>
+
+        <Header></Header>
+        {children}
+        </body>
     </html>
   );
 }

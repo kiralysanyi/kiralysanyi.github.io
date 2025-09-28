@@ -1,0 +1,19 @@
+{
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "about": {
+        "title": "",
+        "content": ""
+    },
+    "experience": {
+        "title": "",
+        "content": ""
+    },
+    "contact": {
+        "title": "",
+        "subtitle": "",
+        "content": ""
+    }
+}
