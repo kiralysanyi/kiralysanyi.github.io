@@ -19,7 +19,7 @@ export default function Header() {
         <header>
             <nav>
                 <img onClick={openSidebar} className="size-10 p-1 rounded-full hover:bg-gray-100/25 transition cursor-pointer" src="/assets/menu.svg" alt="menu" />
-                <span onClick={
+                <span className="ml-auto" onClick={
                     () => {
                         if (content.lang == "hu") {
                             setLocale("en")
