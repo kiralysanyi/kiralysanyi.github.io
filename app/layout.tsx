@@ -3,9 +3,11 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import "./global.css"
+
 export const metadata: Metadata = {
-  title: "Next.js on GitHub Pages",
-  description: "A Next.js web application on GitHub Pages",
+  title: "Király Sándor - Webfejlesztő",
+  description: "Sándor Király portfólió weboldala - Webfejlesztés, programozás, projektek és tapasztalatok.",
 };
 
 export default function RootLayout({
@@ -14,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="hu">
       <body className={inter.className}>{children}</body>
     </html>
   );
