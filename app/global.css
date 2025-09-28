@@ -3,6 +3,7 @@
 html, body, #__next {
     @apply min-h-screen;
     @apply bg-gradient-to-b from-gray-950 via-blue-950 to-gray-950;
+    @apply text-white;
 }
 
 .hero {
@@ -26,4 +27,15 @@ nav {
     @apply z-10;
     @apply flex flex-row items-center;
     @apply px-4;
+}
+
+.sidebar {
+    @apply h-screen transition fixed top-0 left-0 backdrop-blur-md z-10 w-2/3 lg:w-2/5 bg-black/70 flex flex-col select-none items-center gap-2.5;
+}
+
+.sidebar a {
+    @apply text-2xl;
+    @apply p-4;
+    @apply bg-gradient-to-r from-transparent hover:from-blue-600/60 to-transparent transition;
+    @apply w-full;
 }
