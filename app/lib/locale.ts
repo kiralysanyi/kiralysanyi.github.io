@@ -1,7 +1,9 @@
 import hu from "../locales/hu.json"
+import en from "../locales/en.json"
 
 function setLocale(lang: "hu" | "en") {
     localStorage.setItem("lang", lang);
+    location.reload();
 }
 
 function getLocale() {
@@ -14,8 +16,7 @@ function getLocale() {
     if (lang == "hu") {
         return hu;
     } else {
-        //Todo: change to en when english translations made
-        return hu;
+        return en;
     }
 }
 

@@ -1,19 +1,19 @@
 {
-    "lang": "hu",
+    "lang": "en",
     "hero": {
         "title": "Király Sándor",
-        "subtitle": "Junior Webfejlesztő"
+        "subtitle": "Junior Webdeveloper"
     },
     "about": {
-        "title": "Rólam",
+        "title": "About me",
         "content": ""
     },
     "experience": {
-        "title": "Tapasztalat",
+        "title": "Experience",
         "content": ""
     },
     "contact": {
-        "title": "Kapcsolat",
+        "title": "Contact",
         "subtitle": "",
         "content": ""
     }
