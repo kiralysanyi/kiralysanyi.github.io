@@ -10,6 +10,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 #bg-gradient {
     height: 100vmax;
     width: 100vmax;
@@ -60,6 +68,23 @@ main {
 
 section {
     position: relative;
+}
+
+.btn {
+    border-radius: 999px;
+    border: none;
+    background-color: #0c83e5;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+    background-position: 0% 0%;
+}
+
+.btn:hover {
+    background-color: #00b564;
 }
 
 @keyframes fadein {
