@@ -123,3 +123,7 @@ section p {
     flex-direction: row;
     gap: 1rem;
 }
+
+ul {
+    font-size: 1.25rem;
+}
