@@ -116,6 +116,7 @@ section p {
 .split-section video {
     max-width: 50%;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
 .btn:hover {
