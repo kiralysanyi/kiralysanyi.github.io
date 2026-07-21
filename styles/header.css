@@ -7,6 +7,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 999px;
     z-index: 10;
+    transition: 300ms;
 }
 
 header nav {

@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 
 <body>
     <div id="bg-gradient"></div>
-    <header class="frosted">
-        <nav>
+    <header class="frosted" id="header">
+        <!-- TODO: add read progress bar -->
+        <span id="h-name">Király Sándor</span>
+        <nav id="nav">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#competitions">Competitions</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button id="menubtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
     </header>
     <main>
         <section id="hero">
@@ -66,5 +76,5 @@
 
     </footer>
 </body>
-
+<script src="./js/menu.js"></script>
 </html>
