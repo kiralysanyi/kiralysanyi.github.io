@@ -85,6 +85,10 @@
         margin-right: auto;
     }
 
+    .split-section {
+        flex-direction: column-reverse;
+    }
+
 }
 
 @keyframes navshow {

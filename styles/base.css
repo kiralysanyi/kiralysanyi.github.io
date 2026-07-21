@@ -1,3 +1,8 @@
+html {
+    scroll-padding-top: 4.5rem;
+    scroll-behavior: smooth;
+}
+
 *,
 button,
 input {
@@ -25,7 +30,7 @@ h2 {
     top: 0px;
     left: 0px;
     background: radial-gradient(circle at 10% 90%,
-            #00fff2 0%,
+            #009d95 0%,
             #076453 45%,
             #061b2c 90%);
 
@@ -68,6 +73,11 @@ main {
 
 section {
     position: relative;
+    padding: 2rem;
+}
+
+section p {
+    font-size: 1.2rem;
 }
 
 .btn {
@@ -81,6 +91,17 @@ section {
     cursor: pointer;
     transition: 200ms;
     background-position: 0% 0%;
+}
+
+.split-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.split-section img {
+    max-width: 50%;
+    border-radius: 1rem;
 }
 
 .btn:hover {
