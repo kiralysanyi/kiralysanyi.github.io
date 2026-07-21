@@ -1,0 +1,67 @@
+#hero {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    display: flex;
+    /* Places both slideshow tracks side-by-side */
+    width: max-content;
+    /* Expands container to fit both tracks full width */
+    animation: slide 20s linear infinite;
+}
+
+/* Pause scroll when the user hovers over the slideshow */
+.slide-container:hover {
+    animation-play-state: paused;
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* Uniform spacing between cards */
+    padding-right: 1.5rem;
+    /* Equal spacing at the join between track 1 and track 2 */
+    flex-shrink: 0;
+}
+
+.slideshow .slide {
+    height: 25dvh;
+    max-width: 50dvw;
+    object-fit: cover;
+    /* Keeps aspect ratio clean without stretching */
+    border-radius: 12px;
+    /* Modern rounded aesthetic */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Subtle scale effect on hover */
+.slideshow .slide:hover {
+    transform: scale(1.03);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Smoothly scrolls exactly half (1 track) */
+    }
+}
+
+#intro {
+    padding-left: 2rem;
+}

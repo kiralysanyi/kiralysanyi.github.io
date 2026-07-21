@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Király Sándor Fullstack developer</title>
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
 </head>
+
 <body>
     <div id="bg-gradient"></div>
+    <header class="frosted">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#competitions">Competitions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
     <main>
-        <h1>This page is under development</h1>
-        <h2>Check back later</h2>
-        <p>Until then, you can check my projects here: <a href="https://github.com/kiralysanyi">github.com/kiralysanyi</a></p>
+        <section id="hero">
+            <article id="intro">
+                <h1>Improvise, Adapt, Overcome, <br>Then write the docs...</h1>
+                <h2>I deliver solutions fast, when short on time.</h2>
+                <button>Jump to projects</button>
+                <button>Jump to competitions</button>
+            </article>
+            <div class="slide-container">
+                <!-- First Track -->
+                <div class="slideshow">
+                    <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
+                    <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
+                    <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
+                    <img src="./assets/hero/Vchat.png" alt="vchat" class="slide">
+                </div>
+                <!-- Duplicate Track for Seamless Looping -->
+                <div class="slideshow">
+                    <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
+                    <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
+                    <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
+                    <img src="./assets/hero/Vchat.png" alt="vchat" class="slide">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 id="about"></h1>
+        </section>
+        <section>
+            <h1 id="skills"></h1>
+        </section>
+        <section>
+            <h1 id="projects"></h1>
+        </section>
+        <section>
+            <h1 id="competitions"></h1>
+        </section>
+        <section>
+            <h1 id="contact"></h1>
+        </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>

@@ -1,3 +1,9 @@
+*,
+button,
+input {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: white;
@@ -13,24 +19,50 @@ body {
     background: radial-gradient(circle at 10% 90%,
             #00fff2 0%,
             #076453 45%,
-            #061b2c 90%
-        );
+            #061b2c 90%);
 
     opacity: 0;
     z-index: -1;
-    animation: 2s ease-in bg-opacity forwards;
-    animation-delay: 1.5s;
+    animation: fadein 1s ease-in forwards;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: rgb(68, 149, 255);
 }
 
-main {
-    text-align: center;
+.frosted {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
 }
 
-@keyframes bg-opacity {
+.frosted::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Adds the grain SVG as a background image */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.15;
+    /* Controls how visible the grain is */
+    pointer-events: none;
+    /* Allows users to click through the grain layer */
+}
+
+main {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: min-content;
+}
+
+section {
+    position: relative;
+}
+
+@keyframes fadein {
     0% {
         opacity: 0;
     }
