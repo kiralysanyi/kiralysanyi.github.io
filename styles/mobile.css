@@ -79,6 +79,12 @@
         font-size: 1.2rem;
     }
 
+    .flexbtn-container {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @keyframes navshow {
