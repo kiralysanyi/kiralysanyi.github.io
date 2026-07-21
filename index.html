@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
+
     <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 
@@ -111,6 +112,56 @@
         <section>
             <h1 id="projects">Projects</h1>
             <h2>My latest and greatest projects</h2>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Pigon Micro</h3>
+                    <p>
+                        A self-hosted, end-to-end encrypted chat application rebuilt from the ground up.
+                        It supports text, image, and video messaging alongside peer-to-peer calling via WebRTC.
+                        Under the hood, it uses AES-GCM for encryption and ECDH for secure key exchange.
+                        Currently running on a Web UI, with a native desktop app (written in Go / Fyne) actively in
+                        development.
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/pigon-micro"
+                            target="_blank" rel="noopener">github.com/kiralysanyi/pigon-micro</a>
+                    </p>
+                </article>
+                <video src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Vchat-Neo</h3>
+                    <p>
+                        A lightweight, self-hosted video conferencing web app built as a complete rewrite of an earlier
+                        project.
+                        Leverages Mediasoup to handle media routing efficiently on the server side, keeping client
+                        resource usage minimal even in calls with 20+ active participants.
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/vchat-neo" target="_blank"
+                            rel="noopener">github.com/kiralysanyi/vchat-neo</a>
+                    </p>
+                </article>
+                <img src="./assets/hero/Vchat.png" alt="vchat-neo">
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Simple Screenshare</h3>
+                    <p>
+                        Does exactly what the name implies: zero-bloat local screen sharing.
+                        Originally built back in school to solve a real classroom issue: students couldn't see the
+                        physical whiteboard clearly, and bad internet bandwidth made Google Meet lag out. I built a
+                        local alternative using Mediasoup, which served as my hands-on lesson in why pure P2P WebRTC
+                        doesn't scale well to 30+ local clients. (According to my latest info, it's still in use.)
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/simple-screenshare"
+                            target="_blank" rel="noopener">github.com/kiralysanyi/simple-screenshare</a>
+                    </p>
+                </article>
+                <img src="./assets/screenshare.png" alt="simple screenshare">
+            </div>
         </section>
         <section>
             <h1 id="competitions"></h1>

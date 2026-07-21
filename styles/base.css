@@ -23,6 +23,19 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.75rem;
+}
+
+.separator {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 #bg-gradient {
     height: 100vmax;
     width: 100vmax;
@@ -99,7 +112,8 @@ section p {
     gap: 1rem;
 }
 
-.split-section img {
+.split-section img,
+.split-section video {
     max-width: 50%;
     border-radius: 1rem;
 }
