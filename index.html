@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Király Sándor - Fullstack Developer</title>
+    <!-- Seo stuff -->
+    <title>Király Sándor — Fullstack Web Developer & Competitive Coder</title>
+    <meta name="description"
+        content="Király Sándor — Fullstack Web Developer specializing in Node.js, TypeScript, React, and Go. National award winner in Web Technologies (WorldSkills / EuroSkills).">
+    <meta name="author" content="Király Sándor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kiralysanyi.github.io/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiralysanyi.github.io/">
+    <meta property="og:title" content="Király Sándor — Fullstack Web Developer">
+    <meta property="og:description"
+        content="Fullstack Developer specializing in Node.js, TypeScript, React, and Go. Check out my real-time web applications and national competition results.">
+    <meta property="og:image" content="https://kiralysanyi.github.io/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kiralysanyi.github.io/">
+    <meta name="twitter:title" content="Király Sándor — Fullstack Web Developer">
+    <meta name="twitter:description"
+        content="Fullstack Developer specializing in Node.js, TypeScript, React, and Go. Check out my real-time web applications and national competition results.">
+    <meta name="twitter:image" content="https://kiralysanyi.github.io/assets/og-image.jpg">
+
+    <!-- Seo stuff end -->
+
+
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Király Sándor",
+  "jobTitle": "Fullstack Web Developer",
+  "url": "https://kiralysanyi.github.io",
+  "sameAs": [
+    "https://github.com/kiralysanyi"
+  ],
+  "knowsAbout": [
+    "Node.js",
+    "TypeScript",
+    "React",
+    "Go",
+    "WebRTC",
+    "MySQL",
+    "Docker",
+    "Mediasoup"
+  ],
+  "award": [
+    "3rd Place - WorldSkills 2026 Hungarian National Qualifier (Web Technologies)",
+    "2nd Place - EuroSkills 2027 Hungarian National Qualifier (Web Technologies)"
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -45,16 +101,22 @@
             <div class="slide-container">
                 <!-- First Track -->
                 <div class="slideshow">
-                    <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
-                    <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
-                    <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
+                        loop></video>
                     <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
                 </div>
                 <!-- Duplicate Track for Seamless Looping -->
                 <div class="slideshow">
-                    <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
-                    <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
-                    <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
+                        loop></video>
                     <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
                 </div>
             </div>
@@ -120,7 +182,7 @@
                             target="_blank" rel="noopener">github.com/kiralysanyi/pigon-micro</a>
                     </p>
                 </article>
-                <video src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
             </div>
             <div class="separator"></div>
             <div class="split-section">
@@ -180,7 +242,7 @@
                         tight deadlines.
                     </p>
                 </article>
-                <video src="./assets/hero/Worldskills.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" muted autoplay loop></video>
             </div>
             <div class="separator"></div>
             <div class="split-section">
@@ -193,7 +255,7 @@
                             overall in Hungary</b>.
                     </p>
                 </article>
-                <video src="./assets/hero/Euroskills.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" muted autoplay loop></video>
             </div>
         </section>
 
