@@ -1,17 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Király Sándor Fullstack developer</title>
+    <!-- Seo stuff -->
+    <title>Király Sándor — Fullstack Web Developer & Competitive Coder</title>
+    <meta name="description"
+        content="Király Sándor — Fullstack Web Developer specializing in Node.js, TypeScript, React, and Go. National award winner in Web Technologies (WorldSkills / EuroSkills).">
+    <meta name="author" content="Király Sándor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kiralysanyi.github.io/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiralysanyi.github.io/">
+    <meta property="og:title" content="Király Sándor — Fullstack Web Developer">
+    <meta property="og:description"
+        content="Fullstack Developer specializing in Node.js, TypeScript, React, and Go. Check out my real-time web applications and national competition results.">
+    <meta property="og:image" content="https://kiralysanyi.github.io/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kiralysanyi.github.io/">
+    <meta name="twitter:title" content="Király Sándor — Fullstack Web Developer">
+    <meta name="twitter:description"
+        content="Fullstack Developer specializing in Node.js, TypeScript, React, and Go. Check out my real-time web applications and national competition results.">
+    <meta name="twitter:image" content="https://kiralysanyi.github.io/assets/og-image.jpg">
+
+    <!-- Seo stuff end -->
+
+
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Király Sándor",
+  "jobTitle": "Fullstack Web Developer",
+  "url": "https://kiralysanyi.github.io",
+  "sameAs": [
+    "https://github.com/kiralysanyi"
+  ],
+  "knowsAbout": [
+    "Node.js",
+    "TypeScript",
+    "React",
+    "Go",
+    "WebRTC",
+    "MySQL",
+    "Docker",
+    "Mediasoup"
+  ],
+  "award": [
+    "3rd Place - WorldSkills 2026 Hungarian National Qualifier (Web Technologies)",
+    "2nd Place - EuroSkills 2027 Hungarian National Qualifier (Web Technologies)"
+  ]
+}
+</script>
 </head>
+
 <body>
     <div id="bg-gradient"></div>
+    <header class="frosted" id="header">
+        <!-- TODO: add read progress bar -->
+        <span id="h-name">Király Sándor</span>
+        <nav id="nav">
+            <a href="#about">About</a>
+            <a href="#stack">Tech Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#competitions">Competitions</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="menubtn" aria-label="Toggle Navigation Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
+    </header>
     <main>
-        <h1>This page is under development</h1>
-        <h2>Check back later</h2>
-        <p>Until then, you can check my projects here: <a href="https://github.com/kiralysanyi">github.com/kiralysanyi</a></p>
+        <section id="hero">
+            <article id="intro">
+                <h1>Improvise, Adapt, Overcome, <br>Then write the docs...</h1>
+                <h2>I deliver solutions fast, <br>when short on time.</h2>
+                <div class="flexbtn-container">
+                    <a href="#projects" class="btn">Jump to projects</a>
+                    <a href="#competitions" class="btn">Jump to competitions</a>
+                </div>
+            </article>
+            <div class="slide-container">
+                <!-- First Track -->
+                <div class="slideshow">
+                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
+                        loop></video>
+                    <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
+                </div>
+                <!-- Duplicate Track for Seamless Looping -->
+                <div class="slideshow">
+                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                        autoplay loop></video>
+                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
+                        loop></video>
+                    <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About me</h1>
+            <div class="split-section">
+                <article>
+                    <p>
+                        I'm naturally curious when it comes to technology. I love trying out new stacks and figuring out
+                        what makes them tick.
+                    </p>
+                    <p>
+                        I've been coding since I was 13, spending most of my time in the <b>Node.js</b> ecosystem before
+                        expanding into <b>Go</b>. Over the past two years, I've accelerated my growth by picking up
+                        <b>React</b>, moving to <b>TypeScript</b> for better code clarity, and actively ditching bad
+                        coding habits to build cleaner software.
+                    </p>
+                    <p>
+                        As I kept leveling up, I put my skills to the test in <b>national competitions</b>. I placed
+                        <b>3rd</b> in the <b>Hungarian qualifiers for WorldSkills 2026</b>, and returned the following
+                        year to take <b>2nd place</b> in the <b>EuroSkills 2027 national qualifiers</b>, ranking among
+                        the top young developers in the country both times.
+                    </p>
+                    <p>
+                        Right now, I maintain three active projects (two getting new features, one in maintenance).
+                        Beyond those, I've written countless scripts and side apps just for the love of the game, many
+                        of which grew into fully polished, usable software.
+                    </p>
+                </article>
+                <img src="./assets/profile_pic.jpg"
+                    alt="Photo of Király Sándor competing at EuroSkills 2027 Hungarian National Qualifier">
+            </div>
+        </section>
+
+        <section id="stack">
+            <h1>Tech Stack</h1>
+            <h2>Technologies and tools I build with daily or currently explore.</h2>
+            <ul>
+                <li><b>Current Stack: </b>Node.js, React, TypeScript</li>
+                <li><b>Currently Exploring: </b>Go, Microservices, Native Desktop Dev (Fyne), System Design</li>
+                <li><b>Tools & Infrastructure: </b>Git, Linux, REST APIs, Docker</li>
+                <li><b>Databases: </b>MySQL, MariaDB</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <h2>My latest and greatest projects</h2>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Pigon Micro</h3>
+                    <p>
+                        A self-hosted, end-to-end encrypted chat application rebuilt from the ground up.
+                        It supports text, image, and video messaging alongside peer-to-peer calling via WebRTC.
+                        Under the hood, it uses AES-GCM for encryption and ECDH for secure key exchange.
+                        Currently running on a Web UI, with a native desktop app (written in Go / Fyne) actively in
+                        development.
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/pigon-micro"
+                            target="_blank" rel="noopener">github.com/kiralysanyi/pigon-micro</a>
+                    </p>
+                </article>
+                <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Vchat-Neo</h3>
+                    <p>
+                        A lightweight, self-hosted video conferencing web app built as a complete rewrite of an earlier
+                        project.
+                        Leverages Mediasoup to handle media routing efficiently on the server side, keeping client
+                        resource usage minimal even in calls with 20+ active participants.
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/vchat-neo" target="_blank"
+                            rel="noopener">github.com/kiralysanyi/vchat-neo</a>
+                    </p>
+                </article>
+                <img src="./assets/hero/Vchat.png" alt="vchat-neo screenshot">
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>Simple Screenshare</h3>
+                    <p>
+                        Does exactly what the name implies: zero-bloat local screen sharing.
+                        Originally built back in school to solve a real classroom issue: students couldn't see the
+                        physical whiteboard clearly, and bad internet bandwidth made Google Meet lag out. I built a
+                        local alternative using Mediasoup, which served as my hands-on lesson in why pure P2P WebRTC
+                        doesn't scale well to 30+ local clients. (According to my latest info, it's still in use.)
+                        <br><br>
+                        <strong>Repository:</strong> <a href="https://github.com/kiralysanyi/simple-screenshare"
+                            target="_blank" rel="noopener">github.com/kiralysanyi/simple-screenshare</a>
+                    </p>
+                </article>
+                <img src="./assets/screenshare.png" alt="simple screenshare screenshot">
+            </div>
+        </section>
+
+        <section id="competitions">
+            <h1>Competitions</h1>
+            <h2>The high-pressure challenges that accelerated my development over the last 2 years.</h2>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>WorldSkills 2026 Hungarian National Qualifiers</h3>
+                    <p>
+                        Competing in the <b>Web Technologies</b> category, this was my entry point into competitive
+                        development. During my final year of school, my teacher encouraged me to enter and I decided to
+                        give it a shot.
+                        <br><br>
+                        Preparing for round one became my primary motivation to transition from plain JS to mastering
+                        React and CSS. Round two was pure endurance: traveling 3.5 hours to Budapest on 3 hours of sleep
+                        for an intense 8-hour live coding marathon. Out of the nationwide applicants, I placed in the
+                        top 3 of the 8 finalists chosen for this round.
+                        <br><br>
+                        The final stage was a multi-day pressure test involving complex frontend and backend modules
+                        under live observation by judges, spectators, and photographers. I finished <b>3rd place overall
+                            nationally</b>, a huge milestone that built my confidence in writing production code under
+                        tight deadlines.
+                    </p>
+                </article>
+                <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" muted autoplay loop></video>
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>EuroSkills 2027 Hungarian National Qualifiers</h3>
+                    <p>
+                        My second run at the national qualifiers in the <b>Web Technologies</b> category. Coming back
+                        with a full year of building real applications made a huge difference. Facing a fresh set of
+                        timed API and UI architecture challenges, I demonstrated clear growth and secured <b>2nd place
+                            overall in Hungary</b>.
+                    </p>
+                </article>
+                <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" muted autoplay loop></video>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h1>Certifications & Recognition</h1>
+            <div class="split-section">
+                <article>
+                    <h3>3rd Place - WorldSkills 2026 National Qualifier</h3>
+                    <p><b>Category:</b> Web Technologies</p>
+                    <p><b>Issuer:</b> SkillsHungary / SkillsIT (MKIK)</p>
+                    <p>
+                        National recognition awarded for placing 3rd overall in the Hungarian qualifiers for WorldSkills
+                        Shanghai 2026.
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener"
+                            href="https://skillsit.hu/hirek/megvannak-a-worldskills-shanghai-2026-hazai-valogatojanak-gyoztesei">Read
+                            Official Hungarian Announcement</a>
+                    </p>
+                </article>
+                <img src="./assets/certifications/worldskills_hungarion_qualifier.jpg"
+                    alt="WorldSkills Hungarian Qualifier 3rd place certificate">
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>2nd Place - EuroSkills 2027 National Qualifier</h3>
+                    <p><b>Category:</b> Web Technologies</p>
+                    <p><b>Issuer:</b> SkillsHungary / SkillsIT (MKIK)</p>
+                    <p>
+                        National recognition awarded for taking 2nd place overall in the Hungarian qualifiers for
+                        EuroSkills Düsseldorf 2027 at the Szakma Sztár Festival.
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener"
+                            href="https://skillsit.hu/hirek/sikeresen-lezarult-a-euroskills-dusseldorf-2027-nemzeti-valogatoja-a-szakma-sztar-fesztivalon">Read
+                            Official Hungarian Announcement</a>
+                    </p>
+                </article>
+                <img src="./assets/certifications/euroskills_hungarian_qualifier.jpg"
+                    alt="EuroSkills Hungarian Qualifier 2nd place certificate">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Get In Touch</h1>
+            <h2>Interested in working together or checking out my open-source work?</h2>
+            <div class="split-section">
+                <article>
+                    <p style="font-size: 1.5rem;">I'm always open to discussing new opportunities, side projects, or
+                        backend/fullstack developer
+                        roles.</p>
+
+                    <div class="contact-card frosted">
+                        <div class="name-row">
+                            <img src="./assets/profile_pic_cropped.jpg" alt="">
+                            <span>Király Sándor - Fullstack Developer</span>
+                        </div>
+                        <div class="contact-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                            </svg>
+                            <a href="mailto:kiralysandor1986@gmail.com">kiralysandor1986@gmail.com</a>
+                        </div>
+                        <div class="contact-row">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg fill="#fff" viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031c1.871 1.094 3.386 2.609 4.449 4.422l.031.058c1.04 1.769 1.654 3.896 1.654 6.166 0 5.406-3.483 10-8.327 11.658l-.087.026c-.063.02-.135.031-.209.031-.162 0-.312-.054-.433-.144l.002.001c-.128-.115-.208-.281-.208-.466 0-.005 0-.01 0-.014v.001q0-.048.008-1.226t.008-2.154c.007-.075.011-.161.011-.249 0-.792-.323-1.508-.844-2.025.618-.061 1.176-.163 1.718-.305l-.076.017c.573-.16 1.073-.373 1.537-.642l-.031.017c.508-.28.938-.636 1.292-1.058l.006-.007c.372-.476.663-1.036.84-1.645l.009-.035c.209-.683.329-1.468.329-2.281 0-.045 0-.091-.001-.136v.007c0-.022.001-.047.001-.072 0-1.248-.482-2.383-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479 0-.649-.145-1.263-.404-1.814l.011.026c-.115-.022-.246-.035-.381-.035-.334 0-.649.078-.929.216l.012-.005c-.568.21-1.054.448-1.512.726l.038-.022-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433c-.373-.214-.814-.421-1.272-.595l-.066-.022c-.293-.154-.64-.244-1.009-.244-.124 0-.246.01-.364.03l.013-.002c-.248.524-.393 1.139-.393 1.788 0 .531.097 1.04.275 1.509l-.01-.029c-.785.844-1.266 1.979-1.266 3.227 0 .025 0 .051.001.076v-.004c-.001.039-.001.084-.001.13 0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013c.354.435.782.793 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012c-.207.101-.448.183-.699.236l-.021.004c-.256.051-.549.08-.85.08-.022 0-.044 0-.066 0h.003c-.394-.008-.756-.136-1.055-.348l.006.004c-.371-.259-.671-.595-.881-.986l-.007-.015c-.198-.336-.459-.614-.768-.827l-.009-.006c-.225-.169-.49-.301-.776-.38l-.016-.004-.32-.048c-.023-.002-.05-.003-.077-.003-.14 0-.273.028-.394.077l.007-.003q-.128.072-.08.184c.039.086.087.16.145.225l-.001-.001c.061.072.13.135.205.19l.003.002.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007c.045.002.097.002.15.002.261 0 .517-.021.767-.062l-.027.004.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001c-.119.089-.268.143-.431.143-.075 0-.147-.011-.214-.032l.005.001c-4.929-1.689-8.409-6.283-8.409-11.69 0-2.268.612-4.393 1.681-6.219l-.032.058c1.094-1.871 2.609-3.386 4.422-4.449l.058-.031c1.739-1.034 3.835-1.645 6.073-1.645h.098-.005zm-7.64 17.666q.048-.112-.112-.192-.16-.048-.208.032-.048.112.112.192.144.096.208-.032zm.497.545q.112-.08-.032-.256-.16-.144-.256-.048-.112.08.032.256.159.157.256.047zm.48.72q.144-.112 0-.304-.128-.208-.272-.096-.144.08 0 .288t.272.112zm.672.673q.128-.128-.064-.304-.192-.192-.32-.048-.144.128.064.304.192.192.32.044zm.913.4q.048-.176-.208-.256-.24-.064-.304.112t.208.24q.24.097.304-.096zm1.009.08q0-.208-.272-.176-.256 0-.256.176 0 .208.272.176.256.001.256-.175zm.929-.16q-.032-.176-.288-.144-.256.048-.224.24t.288.128.225-.224z" />
+                            </svg>
+
+                            <a href="https://github.com/kiralysanyi" target="_blank"
+                                rel="noopener">github.com/kiralysanyi</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Király Sándor. Built with clean HTML & CSS (and some JS).</p>
+    </footer>
 </body>
+<script src="./js/menu.js"></script>
+
 </html>

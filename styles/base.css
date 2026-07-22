@@ -1,7 +1,40 @@
+html {
+    scroll-padding-top: 4.5rem;
+    scroll-behavior: smooth;
+}
+
+*,
+button,
+input {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+.separator {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgb(59, 255, 62), transparent);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #bg-gradient {
@@ -11,26 +44,93 @@ body {
     top: 0px;
     left: 0px;
     background: radial-gradient(circle at 10% 90%,
-            #00fff2 0%,
+            #009d95 0%,
             #076453 45%,
-            #061b2c 90%
-        );
+            #061b2c 90%);
 
     opacity: 0;
     z-index: -1;
-    animation: 2s ease-in bg-opacity forwards;
-    animation-delay: 1.5s;
+    animation: fadein 1s ease-in forwards;
 }
 
-a, a:visited {
-    color: rgb(68, 149, 255);
+a,
+a:visited {
+    color: rgb(114, 175, 255);
+}
+
+.frosted {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
+}
+
+.frosted::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* Adds the grain SVG as a background image */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://w3.org id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.15;
+    /* Controls how visible the grain is */
+    pointer-events: none;
+    /* Allows users to click through the grain layer */
 }
 
 main {
-    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: min-content;
 }
 
-@keyframes bg-opacity {
+section {
+    position: relative;
+    padding: 2rem;
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    border-radius: 999px;
+    border: none;
+    background-color: #0c83e5;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+    background-position: 0% 0%;
+}
+
+.split-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.split-section img,
+.split-section video {
+    max-width: 50%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.btn:hover {
+    background-color: #00b564;
+}
+
+.btn,
+.btn:visited {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes fadein {
     0% {
         opacity: 0;
     }
@@ -38,4 +138,75 @@ main {
     100% {
         opacity: 1;
     }
+}
+
+.flexbtn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+ul {
+    font-size: 1.25rem;
+}
+
+.contact-card {
+    padding: 1rem;
+    margin-right: auto;
+    max-width: fit-content;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-row {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    background-color: #002925;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.contact-row img,
+.contact-row svg {
+    width: 3rem !important;
+    height: 3rem;
+}
+
+.name-row {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.name-row img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+#contact {
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(transparent, black);
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    color: rgb(129, 129, 129);
 }
