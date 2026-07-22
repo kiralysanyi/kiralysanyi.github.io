@@ -102,22 +102,22 @@
             <div class="slide-container">
                 <!-- First Track -->
                 <div class="slideshow">
-                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                    <video playsinline preload="metadata" data-src="./assets/hero/Worldskills.mp4" class="slide" muted
                         autoplay loop poster="./assets/hero/WorldSkills-Thumbnail.webp"></video>
-                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                    <video playsinline preload="metadata" data-src="./assets/hero/Euroskills.mp4" class="slide" muted
                         autoplay loop poster="./assets/hero/EuroSkills-Thumbnail.webp"></video>
-                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
-                        loop poster="./assets/hero/Pigon-Thumbnail.webp"></video>
+                    <video playsinline preload="metadata" data-src="./assets/hero/Pigon.mp4" class="slide" muted
+                        autoplay loop poster="./assets/hero/Pigon-Thumbnail.webp"></video>
                     <img src="./assets/hero/Vchat.webp" alt="vchat preview" class="slide">
                 </div>
                 <!-- Duplicate Track for Seamless Looping -->
                 <div class="slideshow">
-                    <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" class="slide" muted
+                    <video playsinline preload="metadata" data-src="./assets/hero/Worldskills.mp4" class="slide" muted
                         autoplay loop poster="./assets/hero/WorldSkills-Thumbnail.webp"></video>
-                    <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" class="slide" muted
+                    <video playsinline preload="metadata" data-src="./assets/hero/Euroskills.mp4" class="slide" muted
                         autoplay loop poster="./assets/hero/EuroSkills-Thumbnail.webp"></video>
-                    <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" class="slide" muted autoplay
-                        loop poster="./assets/hero/Pigon-Thumbnail.webp"></video>
+                    <video playsinline preload="metadata" data-src="./assets/hero/Pigon.mp4" class="slide" muted
+                        autoplay loop poster="./assets/hero/Pigon-Thumbnail.webp"></video>
                     <img src="./assets/hero/Vchat.webp" alt="vchat preview" class="slide">
                 </div>
             </div>
@@ -183,7 +183,7 @@
                             target="_blank" rel="noopener">github.com/kiralysanyi/pigon-micro</a>
                     </p>
                 </article>
-                <video playsinline preload="metadata" src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" poster="./assets/hero/Pigon-Thumbnail.webp" data-src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
             </div>
             <div class="separator"></div>
             <div class="split-section">
@@ -243,7 +243,8 @@
                         tight deadlines.
                     </p>
                 </article>
-                <video playsinline preload="metadata" src="./assets/hero/Worldskills.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" data-src="./assets/hero/Worldskills.mp4" muted autoplay
+                    loop></video>
             </div>
             <div class="separator"></div>
             <div class="split-section">
@@ -256,7 +257,8 @@
                             overall in Hungary</b>.
                     </p>
                 </article>
-                <video playsinline preload="metadata" src="./assets/hero/Euroskills.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" data-src="./assets/hero/Euroskills.mp4" muted autoplay
+                    loop></video>
             </div>
         </section>
 
@@ -344,7 +346,32 @@
     <footer>
         <p>&copy; 2026 Király Sándor. Built with clean HTML & CSS (and some JS).</p>
     </footer>
+    <script>
+        async function loadSharedVideos() {
+            const videoElements = document.querySelectorAll('video[data-src]');
 
+            // Get unique video URLs so we don't fetch anything twice
+            const uniqueUrls = [...new Set(Array.from(videoElements).map(v => v.dataset.src))];
+
+            for (const url of uniqueUrls) {
+                try {
+                    // Fetch the video file ONCE
+                    const response = await fetch(url);
+                    const blob = await response.blob();
+                    const blobUrl = URL.createObjectURL(blob);
+
+                    // Assign the single Blob URL to every video tag using this file
+                    document.querySelectorAll(`video[data-src="${url}"]`).forEach(video => {
+                        video.src = blobUrl;
+                    });
+                } catch (err) {
+                    console.error('Failed to load shared video:', err);
+                }
+            }
+        }
+
+        loadSharedVideos();
+    </script>
 </body>
 <script src="./js/menu.js"></script>
 
