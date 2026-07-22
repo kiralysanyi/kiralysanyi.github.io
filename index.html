@@ -41,31 +41,111 @@
     <link rel="stylesheet" href="./styles/mobile.css">
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Király Sándor",
-  "jobTitle": "Fullstack Web Developer",
-  "url": "https://kiralysanyi.github.io",
-  "sameAs": [
-    "https://github.com/kiralysanyi"
-  ],
-  "knowsAbout": [
-    "Node.js",
-    "TypeScript",
-    "React",
-    "Go",
-    "WebRTC",
-    "MySQL",
-    "Docker",
-    "Mediasoup"
-  ],
-  "award": [
-    "3rd Place - WorldSkills 2026 Hungarian National Qualifier (Web Technologies)",
-    "2nd Place - EuroSkills 2027 Hungarian National Qualifier (Web Technologies)"
-  ]
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Király Sándor",
+      "jobTitle": "Fullstack Web Developer",
+      "url": "https://kiralysanyi.github.io",
+      "sameAs": [
+        "https://github.com/kiralysanyi"
+      ],
+      "knowsAbout": [
+        "Node.js",
+        "TypeScript",
+        "React",
+        "Go",
+        "WebRTC",
+        "MySQL",
+        "Docker",
+        "Mediasoup"
+      ],
+      "award": [
+        "3rd Place - WorldSkills 2026 Hungarian National Qualifier (Web Technologies)",
+        "2nd Place - EuroSkills 2027 Hungarian National Qualifier (Web Technologies)"
+      ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDDFB93RG3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied'
+        });
+
+        gtag('config', 'G-DDDFB93RG3');
+    </script>
+
+    <!-- Cookie consent -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" id="silktide-consent-manager-css"
+        href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.css"
+        integrity="sha384-EdMq+R+YOnsbelo08wPenoTlnxbAyxI11NMIxzugx/qAsbh64KcOkqxYqq6pfvO/" crossorigin="anonymous">
+    <style id="silktide-consent-manager-overrides">
+        #stcm-wrapper {
+            --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
+            --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
+            --primaryColor: #AFE3FF;
+            --backgroundColor: #070219;
+            --textColor: #E5F6FA;
+            --backdropBackgroundColor: #00000033;
+            --backdropBackgroundBlur: 0px;
+            --iconColor: #AFE3FF;
+            --iconBackgroundColor: #070219;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.js"
+        integrity="sha384-5Pt34uiIbCsvfiiZXoLi4HRf/YBXjr9c8e+gYeVo9smUaInNHYVtc8NZ8wUnXJIq"
+        crossorigin="anonymous"></script>
+    <script>
+        window.silktideConsentManager.init({
+            backdrop: {
+                show: true
+            },
+            icon: {
+                position: "bottomLeft"
+            },
+            prompt: {
+                position: "bottomRight"
+            },
+            consentTypes: [
+                {
+                    id: "analytics",
+                    label: "Analytics",
+                    description: "<p><span style=\"letter-spacing: 0.34px;\">These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</span></p>",
+                    required: false,
+                    gtag: "analytics_storage"
+                }
+            ],
+            text: {
+                prompt: {
+                    description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic.</p>",
+                    acceptAllButtonText: "Accept all",
+                    acceptAllButtonAccessibleLabel: "Accept all cookies",
+                    rejectNonEssentialButtonText: "Reject non-essential",
+                    rejectNonEssentialButtonAccessibleLabel: "Reject all non-essential cookies",
+                    preferencesButtonText: "Preferences",
+                    preferencesButtonAccessibleLabel: "Toggle preferences"
+                },
+                preferences: {
+                    title: "Customize your cookie preferences",
+                    description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+                    saveButtonText: "Save and close",
+                    saveButtonAccessibleLabel: "Save your cookie preferences",
+                    creditLinkText: "Get this banner for free",
+                    creditLinkAccessibleLabel: "Get this banner for free"
+                }
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -183,7 +263,8 @@
                             target="_blank" rel="noopener">github.com/kiralysanyi/pigon-micro</a>
                     </p>
                 </article>
-                <video playsinline preload="metadata" poster="./assets/hero/Pigon-Thumbnail.webp" data-src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
+                <video playsinline preload="metadata" poster="./assets/hero/Pigon-Thumbnail.webp"
+                    data-src="./assets/hero/Pigon.mp4" muted autoplay loop></video>
             </div>
             <div class="separator"></div>
             <div class="split-section">
