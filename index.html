@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Király Sándor - Fullstack developer</title>
+    <title>Király Sándor - Fullstack Developer</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
-
     <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 
@@ -25,7 +24,7 @@
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button id="menubtn">
+        <button id="menubtn" aria-label="Toggle Navigation Menu">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                 <path fill-rule="evenodd"
                     d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
@@ -37,10 +36,10 @@
         <section id="hero">
             <article id="intro">
                 <h1>Improvise, Adapt, Overcome, <br>Then write the docs...</h1>
-                <h2>I deliver solutions fast, <br> when short on time.</h2>
+                <h2>I deliver solutions fast, <br>when short on time.</h2>
                 <div class="flexbtn-container">
-                    <button class="btn">Jump to projects</button>
-                    <button class="btn">Jump to competitions</button>
+                    <a href="#projects" class="btn">Jump to projects</a>
+                    <a href="#competitions" class="btn">Jump to competitions</a>
                 </div>
             </article>
             <div class="slide-container">
@@ -49,68 +48,62 @@
                     <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
                     <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
                     <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
-                    <img src="./assets/hero/Vchat.png" alt="vchat" class="slide">
+                    <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
                 </div>
                 <!-- Duplicate Track for Seamless Looping -->
                 <div class="slideshow">
                     <video src="./assets/hero/Worldskills.mp4" class="slide" muted autoplay loop></video>
                     <video src="./assets/hero/Euroskills.mp4" class="slide" muted autoplay loop></video>
                     <video src="./assets/hero/Pigon.mp4" class="slide" muted autoplay loop></video>
-                    <img src="./assets/hero/Vchat.png" alt="vchat" class="slide">
+                    <img src="./assets/hero/Vchat.png" alt="vchat preview" class="slide">
                 </div>
             </div>
         </section>
-        <section>
-            <h1 id="about">About me</h1>
+
+        <section id="about">
+            <h1>About me</h1>
             <div class="split-section">
                 <article>
-                    <p>I'm naturally curious when it comes to technology. I love trying out new stacks and figuring out
-                        what
-                        makes them tick.
+                    <p>
+                        I'm naturally curious when it comes to technology. I love trying out new stacks and figuring out
+                        what makes them tick.
                     </p>
                     <p>
                         I've been coding since I was 13, spending most of my time in the <b>Node.js</b> ecosystem before
-                        expanding
-                        into
-                        <b>Go</b>. Over the past two years, I've accelerated my growth by picking up <b>React</b>,
-                        moving to
-                        <b>TypeScript</b>
-                        for
-                        better code clarity, and actively ditching bad coding habits to build cleaner software.
+                        expanding into <b>Go</b>. Over the past two years, I've accelerated my growth by picking up
+                        <b>React</b>, moving to <b>TypeScript</b> for better code clarity, and actively ditching bad
+                        coding habits to build cleaner software.
                     </p>
                     <p>
                         As I kept leveling up, I put my skills to the test in <b>national competitions</b>. I placed
-                        <b>3rd</b> in the
-                        <b>Hungarian qualifiers for WorldSkills 2026</b>, and returned the following year to take <b>2nd
-                            place</b> in
-                        the <b>EuroSkills 2027 national qualifiers</b>, ranking among the top young developers in the
-                        country
-                        both times.
+                        <b>3rd</b> in the <b>Hungarian qualifiers for WorldSkills 2026</b>, and returned the following
+                        year to take <b>2nd place</b> in the <b>EuroSkills 2027 national qualifiers</b>, ranking among
+                        the top young developers in the country both times.
                     </p>
                     <p>
                         Right now, I maintain three active projects (two getting new features, one in maintenance).
-                        Beyond
-                        those, I've written countless scripts and side apps just for the love of the game, many of which
-                        grew
-                        into fully polished, usable software.
+                        Beyond those, I've written countless scripts and side apps just for the love of the game, many
+                        of which grew into fully polished, usable software.
                     </p>
                 </article>
                 <img src="./assets/profile_pic.jpg"
-                    alt="Photo of me competing on Euroskills 2027 Hungarian National qualifier">
+                    alt="Photo of Király Sándor competing at EuroSkills 2027 Hungarian National Qualifier">
             </div>
         </section>
-        <section>
-            <h1 id="stack">Tech Stack</h1>
-            <h2>Currently I am working/planning with the following stack(s).</h2>
+
+        <section id="stack">
+            <h1>Tech Stack</h1>
+            <h2>Technologies and tools I build with daily or currently explore.</h2>
             <ul>
-                <li><b>Current Stack: </b>NodeJS,React,TypeScript</li>
-                <li><b>Currently Exploring: </b>Go, Microservices, Desktop Application development, System Design</li>
-                <li><b>Tools & Ecosystem: </b>Git, Linux, REST APIs</li>
-                <li><b>For Databases: </b>Mysql/Mariadb</li>
+                <li><b>Current Core: </b>Node.js, React, TypeScript</li>
+                <li><b>Currently Exploring: </b>Go, Microservices, Native Desktop Dev (Fyne), System Design</li>
+                <li><b>Tools & Infrastructure: </b>Git, Linux, REST APIs, Docker</li>
+                <li><b>Databases: </b>MySQL, MariaDB</li>
             </ul>
         </section>
-        <section>
-            <h1 id="projects">Projects</h1>
+
+        <section id="projects">
+            <h1>Projects</h1>
             <h2>My latest and greatest projects</h2>
             <div class="separator"></div>
             <div class="split-section">
@@ -143,7 +136,7 @@
                             rel="noopener">github.com/kiralysanyi/vchat-neo</a>
                     </p>
                 </article>
-                <img src="./assets/hero/Vchat.png" alt="vchat-neo">
+                <img src="./assets/hero/Vchat.png" alt="vchat-neo screenshot">
             </div>
             <div class="separator"></div>
             <div class="split-section">
@@ -160,28 +153,31 @@
                             target="_blank" rel="noopener">github.com/kiralysanyi/simple-screenshare</a>
                     </p>
                 </article>
-                <img src="./assets/screenshare.png" alt="simple screenshare">
+                <img src="./assets/screenshare.png" alt="simple screenshare screenshot">
             </div>
         </section>
-        <section>
-            <h1 id="competitions">Competitions</h1>
-            <h2>The stuff that kicked in the last 2 years of my improvements.</h2>
+
+        <section id="competitions">
+            <h1>Competitions</h1>
+            <h2>The high-pressure challenges that accelerated my development over the last 2 years.</h2>
             <div class="separator"></div>
             <div class="split-section">
                 <article>
                     <h3>WorldSkills 2026 Hungarian National Qualifiers</h3>
                     <p>
-                        This was my entry point into competitive coding. During my final year of school, my teacher
-                        suggested I join a national competition, and I figured, why not?
+                        Competing in the <b>Web Technologies</b> category, this was my entry point into competitive
+                        development. During my final year of school, my teacher encouraged me to enter and I decided to
+                        give it a shot.
                         <br><br>
-                        That initial round became my motivation to master React and CSS. Round two was pure
-                        hustle, traveling 3.5 hours to Budapest on 3 hours of sleep for an 8-hour on-site marathon. I
-                        placed in the top 3 out of 8 finalists, advancing to the final round.
+                        Preparing for round one became my primary motivation to transition from plain JS to mastering
+                        React and CSS. Round two was pure endurance: traveling 3.5 hours to Budapest on 3 hours of sleep
+                        for an intense 8-hour live coding marathon. Out of the nationwide applicants, I placed in the
+                        top 3 of the 8 finalists chosen for this round.
                         <br><br>
-                        The third round was a multi-day endurance test where we built live in front of a crowd and
-                        photographers. Ultimately, I finished 3rd overall. This was an unforgettable experience that
-                        completely
-                        built up my confidence under pressure.
+                        The final stage was a multi-day pressure test involving complex frontend and backend modules
+                        under live observation by judges, spectators, and photographers. I finished <b>3rd place overall
+                            nationally</b>, a huge milestone that built my confidence in writing production code under
+                        tight deadlines.
                     </p>
                 </article>
                 <video src="./assets/hero/Worldskills.mp4" muted autoplay loop></video>
@@ -191,23 +187,77 @@
                 <article>
                     <h3>EuroSkills 2027 Hungarian National Qualifiers</h3>
                     <p>
-                        This was my second shot at the qualifiers. While I didn't take the top spot, the growth from the
-                        previous year was undeniable. Armed with more hands-on experience, I powered through an entirely
-                        new set of complex tasks and took 2nd place. Maybe the third try brings 1st? Who knows.
+                        My second run at the national qualifiers in the <b>Web Technologies</b> category. Coming back
+                        with a full year of building real applications made a huge difference. Facing a fresh set of
+                        timed API and UI architecture challenges, I demonstrated clear growth and secured <b>2nd place
+                            overall in Hungary</b>.
                     </p>
                 </article>
                 <video src="./assets/hero/Euroskills.mp4" muted autoplay loop></video>
             </div>
         </section>
-        <section>
-            <h1 id="certifications"></h1>
+
+        <section id="certifications">
+            <h1>Certifications & Recognition</h1>
+            <div class="split-section">
+                <article>
+                    <h3>3rd Place – WorldSkills 2026 National Qualifier</h3>
+                    <p><b>Category:</b> Web Technologies</p>
+                    <p><b>Issuer:</b> SkillsHungary / SkillsIT (MKIK)</p>
+                    <p>
+                        National recognition awarded for placing 3rd overall in the Hungarian qualifiers for WorldSkills
+                        Shanghai 2026.
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener"
+                            href="https://skillsit.hu/hirek/megvannak-a-worldskills-shanghai-2026-hazai-valogatojanak-gyoztesei">Read
+                            Official Hungarian Announcement →</a>
+                    </p>
+                </article>
+                <img src="./assets/certifications/worldskills_hungarion_qualifier.jpg"
+                    alt="WorldSkills Hungarian Qualifier 3rd place certificate">
+            </div>
+            <div class="separator"></div>
+            <div class="split-section">
+                <article>
+                    <h3>2nd Place – EuroSkills 2027 National Qualifier</h3>
+                    <p><b>Category:</b> Web Technologies</p>
+                    <p><b>Issuer:</b> SkillsHungary / SkillsIT (MKIK)</p>
+                    <p>
+                        National recognition awarded for taking 2nd place overall in the Hungarian qualifiers for
+                        EuroSkills Düsseldorf 2027 at the Szakma Sztár Festival.
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener"
+                            href="https://skillsit.hu/hirek/sikeresen-lezarult-a-euroskills-dusseldorf-2027-nemzeti-valogatoja-a-szakma-sztar-fesztivalon">Read
+                            Official Hungarian Announcement →</a>
+                    </p>
+                </article>
+                <img src="./assets/certifications/euroskills_hungarian_qualifier.jpg"
+                    alt="EuroSkills Hungarian Qualifier 2nd place certificate">
+            </div>
         </section>
-        <section>
-            <h1 id="contact"></h1>
+
+        <section id="contact">
+            <h1>Get In Touch</h1>
+            <h2>Interested in working together or checking out my open-source work?</h2>
+            <div class="split-section">
+                <article>
+                    <p>I'm always open to discussing new opportunities, side projects, or backend/fullstack developer
+                        roles.</p>
+                    <ul>
+                        <li><b>Email:</b> <a href="mailto:kiralysandor1986@gmail.com">kiralysandor1986@gmail.com</a>
+                        </li>
+                        <li><b>GitHub:</b> <a href="https://github.com/kiralysanyi" target="_blank"
+                                rel="noopener">github.com/kiralysanyi</a></li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; 2026 Király Sándor. Built with clean HTML & CSS.</p>
     </footer>
 </body>
 <script src="./js/menu.js"></script>

@@ -123,6 +123,12 @@ section p {
     background-color: #00b564;
 }
 
+.btn,
+.btn:visited {
+    text-decoration: none;
+    color: white;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0;
