@@ -44,9 +44,9 @@ h3 {
     top: 0px;
     left: 0px;
     background: radial-gradient(circle at 10% 90%,
-            #009d95 0%,
-            #076453 45%,
-            #061b2c 90%);
+            #00499d 0%,
+            #074564 45%,
+            #06122c 90%);
 
     opacity: 0;
     z-index: -1;

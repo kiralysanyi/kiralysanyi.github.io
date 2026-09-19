@@ -91,6 +91,27 @@
         flex-direction: column-reverse;
     }
 
+    .split-section img,
+    .split-section video {
+        max-width: 100%;
+        border-radius: 1rem;
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+    }
+
+    .split-section .article-offset {
+        margin-top: -25%;
+        backdrop-filter: blur(4px);
+    }
+
+    .content-fade-mobile {
+        position: relative;
+        /* required so ::after can be positioned inside it */
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    }
+
 }
 
 @keyframes navshow {
