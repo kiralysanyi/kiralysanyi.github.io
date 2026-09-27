@@ -12,35 +12,18 @@ const closeicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" f
 
 // mobile only, see mobile.css
 let isMenuOpen = false
+const header = document.getElementById("header")
+const nav = document.getElementById("nav")
+const menuButton = document.getElementById("menubtn")
 
-function toggleMenu() {
-    const header = document.getElementById("header");
-    const nav = document.getElementById("nav");
-
-    if (isMenuOpen) {
-        nav.classList.remove("nav-show")
-        setTimeout(() => {
-            header.classList.remove("header-show")
-            setTimeout(() => {
-                header.style.borderRadius = "999px"
-            }, 100);
-        }, 200);
-
-    } else {
-        header.style.borderRadius = "0px"
-        setTimeout(() => {
-            header.classList.add("header-show")
-            setTimeout(() => {
-                nav.classList.add("nav-show")
-            }, 200);
-        }, 100);
-    }
-
-    isMenuOpen = !isMenuOpen
+function setMenuState(open) {
+    isMenuOpen = open
+    header.classList.toggle("header-show", open)
+    nav.classList.toggle("nav-show", open)
+    menuButton.setAttribute("aria-expanded", String(open))
 }
 
-document.getElementById("menubtn").addEventListener("click", toggleMenu)
-document.getElementById("nav").addEventListener("click", () => {
-    isMenuOpen = true;
-    toggleMenu();
+menuButton.addEventListener("click", () => setMenuState(!isMenuOpen))
+nav.addEventListener("click", event => {
+    if (event.target.closest("a")) setMenuState(false)
 })

@@ -1,6 +1,6 @@
 #hero {
     position: relative;
-    background-image: linear-gradient(black, transparent);
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.88) 20%, rgba(0, 0, 0, 0.2)), radial-gradient(circle at 85% 40%, rgba(0, 181, 100, 0.16), transparent 30%);
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
@@ -8,8 +8,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
+    isolation: isolate;
 }
+
+#hero::after {
+    content: "";
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    right: 6%;
+    top: 18%;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2rem rgba(175, 227, 255, 0.025), 0 0 0 5rem rgba(175, 227, 255, 0.018);
+    animation: pulse-ring 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#intro {
+    max-width: 800px;
+    animation: intro-in 900ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+#intro h1 { max-width: 780px; }
+#intro h2 { max-width: 520px; }
 
 .slide-container {
     display: flex;
@@ -39,10 +63,20 @@
     max-width: 50dvw;
     object-fit: cover;
     /* Keeps aspect ratio clean without stretching */
-    border-radius: 12px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
     /* Modern rounded aesthetic */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
+}
+
+@keyframes intro-in {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-ring {
+    50% { transform: scale(1.08); opacity: 0.5; }
 }
 
 /* Subtle scale effect on hover */
