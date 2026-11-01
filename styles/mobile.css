@@ -28,6 +28,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    #hero {
+        padding-top: 6rem;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -135,6 +139,19 @@
         padding-top: 3.5rem;
     }
 
+    #competitions .split-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    #competitions .split-section > video {
+        grid-row: 1;
+    }
+
+    #competitions .split-section > article {
+        grid-row: 2;
+    }
+
     #about .split-section {
         grid-template-columns: 1fr;
         gap: 0;
@@ -158,6 +175,7 @@
     .article-offset,
     #stack,
     #certifications article,
+    #education article,
     .contact-card {
         padding: 1.25rem;
     }
